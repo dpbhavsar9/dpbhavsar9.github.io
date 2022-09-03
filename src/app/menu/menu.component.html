@@ -1,0 +1,10 @@
+<p-tabMenu
+  [model]="menuList"
+  [scrollable]="true"
+><ng-template pTemplate="item" let-item let-i="index">
+  <div [routerLink]="item.route" routerLinkActive="active">
+    <em [class]="item.icon" class="me-2"></em>
+  <span class="p-menuitem-text">{{item.label}}</span>
+  </div>
+</ng-template>
+</p-tabMenu>

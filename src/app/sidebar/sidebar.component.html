@@ -1,0 +1,35 @@
+<header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        (click)="fixedNavbarExample.toggle()"
+        aria-controls="fixedNavbarExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div
+        mdbCollapse
+        #fixedNavbarExample="mdbCollapse"
+        class="collapse navbar-collapse"
+        id="fixedNavbarExample"
+      >
+        <h6 class="app-title"><span class="badge badge-dark">World Military Expenditure </span></h6>
+      </div>
+      <span class="badge badge-success floar-end">2011-2021</span>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Jumbotron -->
+  <div class="text-center bg-light pb-5 mb-5" style="margin-top: 58px; min-height: 100vh;">
+    <app-menu></app-menu>
+    <router-outlet></router-outlet>
+  </div>
+  <!-- <app-footer></app-footer> -->
+  <!-- Jumbotron -->
+</header>

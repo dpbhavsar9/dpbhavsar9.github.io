@@ -1,0 +1,71 @@
+<ng-container *ngIf="isReady">
+  <ngx-charts-bar-vertical
+    *ngIf="chartName === chartsList.barCharts.vertical.key"
+    [view]="view"
+    [scheme]="config?.colorScheme"
+    [results]="results"
+    [gradient]="config?.gradient"
+    [xAxis]="config?.showXAxis"
+    [yAxis]="config?.showYAxis"
+    [legend]="config?.showLegend"
+    [showXAxisLabel]="config?.showXAxisLabel"
+    [showYAxisLabel]="config?.showYAxisLabel"
+    [xAxisLabel]="config?.xAxisLabel"
+    [yAxisLabel]="config?.yAxisLabel"
+    (select)="onSelect($event)"
+  >
+  </ngx-charts-bar-vertical>
+
+  <ngx-charts-bar-horizontal
+    *ngIf="chartName === chartsList.barCharts.horizontal.key"
+    [view]="view"
+    [scheme]="config?.colorScheme"
+    [results]="results"
+    [gradient]="config?.gradient"
+    [xAxis]="config?.showXAxis"
+    [yAxis]="config?.showYAxis"
+    [legend]="config?.showLegend"
+    [showXAxisLabel]="config?.showXAxisLabel"
+    [showYAxisLabel]="config?.showYAxisLabel"
+    [xAxisLabel]="config?.xAxisLabel"
+    [yAxisLabel]="config?.yAxisLabel"
+    (select)="onSelect($event)"
+  >
+  </ngx-charts-bar-horizontal>
+
+  <ngx-charts-bar-vertical-2d
+    *ngIf="chartName === chartsList.barCharts.groupedVertical.key"
+    [view]="view"
+    [scheme]="config?.colorScheme"
+    [results]="results"
+    [gradient]="config?.gradient"
+    [xAxis]="config?.showXAxis"
+    [yAxis]="config?.showYAxis"
+    [legend]="config?.showLegend"
+    [showXAxisLabel]="config?.showXAxisLabel"
+    [showYAxisLabel]="config?.showYAxisLabel"
+    [xAxisLabel]="config?.xAxisLabel"
+    [yAxisLabel]="config?.yAxisLabel"
+    [legendTitle]="config?.legendTitle"
+    (select)="onSelect($event)"
+  >
+  </ngx-charts-bar-vertical-2d>
+
+  <ngx-charts-bar-horizontal-2d
+    *ngIf="chartName === chartsList.barCharts.groupedHorizontal.key"
+    [view]="view"
+    [scheme]="config?.colorScheme"
+    [results]="results"
+    [gradient]="config?.gradient"
+    [xAxis]="config?.showXAxis"
+    [yAxis]="config?.showYAxis"
+    [legend]="config?.showLegend"
+    [legendPosition]="config?.legendPosition"
+    [showXAxisLabel]="config?.showXAxisLabel"
+    [showYAxisLabel]="config?.showYAxisLabel"
+    [xAxisLabel]="config?.xAxisLabel"
+    [yAxisLabel]="config?.yAxisLabel"
+    (select)="onSelect($event)"
+  >
+  </ngx-charts-bar-horizontal-2d>
+</ng-container>

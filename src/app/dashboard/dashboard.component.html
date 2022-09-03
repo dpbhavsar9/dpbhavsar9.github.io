@@ -1,0 +1,29 @@
+<iframe
+  class="player"
+  title="World Mititary Expenditure"
+  src="https://www.youtube.com/embed/UrUp5Rm_Ncw?autoplay=1"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+
+<div class="card p-4">
+  <ngx-tableau
+    class="card graph"
+    [tableauVizUrl]="LINKS.geoMap_1.link"
+    [options]="OPTIONS"
+  ></ngx-tableau>
+
+  <ngx-tableau
+    class="card graph"
+    [tableauVizUrl]="LINKS.comparisonTop10_1.link"
+    [options]="OPTIONS"
+  ></ngx-tableau>
+
+  <ngx-tableau
+    class="card graph"
+    [tableauVizUrl]="LINKS.timelineTop4_1.link"
+    [options]="OPTIONS"
+  ></ngx-tableau>
+</div>
+
+<!-- You can explore more details at <a href="https://prod-apnortheast-a.online.tableau.com/#/site/darshanipba/workbooks/707446?:origin=card_share_link" target="_blank">Tableau</a> -->
