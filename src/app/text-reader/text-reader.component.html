@@ -1,0 +1,28 @@
+<button
+  class="btn btn-outline mr-1"
+  (click)="read()"
+  *ngIf="playState === PLAY_STATES.STOPPED"
+>
+  <em class="pi pi-play"></em>
+</button>
+<button
+  class="btn btn-outline mr-1"
+  (click)="resume()"
+  *ngIf="playState === PLAY_STATES.PAUSED"
+>
+  <em class="pi pi-play"></em>
+</button>
+<button
+  class="btn btn-outline mr-1"
+  (click)="pause()"
+  *ngIf="playState === PLAY_STATES.PLAYING"
+>
+  <em class="pi pi-pause"></em>
+</button>
+<button
+  class="btn btn-outline mr-1"
+  (click)="stop()"
+  *ngIf="playState === PLAY_STATES.PLAYING || playState === PLAY_STATES.PAUSED"
+>
+  <em class="pi pi-stop"></em>
+</button>

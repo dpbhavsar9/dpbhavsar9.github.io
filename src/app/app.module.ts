@@ -40,6 +40,7 @@ import { MessageModule } from 'primeng/message';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { TableauModule } from 'ngx-tableau';
 import { OtherComponent } from './other/other.component';
+import { TextReaderComponent } from './text-reader/text-reader.component';
 
 
 @NgModule({
@@ -57,7 +58,8 @@ import { OtherComponent } from './other/other.component';
     MenuComponent,
     DataSetComponent,
     AllChartsComponent,
-    OtherComponent
+    OtherComponent,
+    TextReaderComponent
   ],
   imports: [
     BrowserModule,

@@ -26,6 +26,7 @@
     "primeicons": "^5.0.0",
     "primeng": "13.4.1",
     "rxjs": "~7.5.0",
+    "speak-tts": "^2.0.8",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
   },

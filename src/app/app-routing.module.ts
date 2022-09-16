@@ -8,6 +8,7 @@ import { ShareOfGovtSpendingComponent } from './share-of-govt-spending/share-of-
 import { ReadmeComponent } from './readme/readme.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PerCapitaComponent } from './per-capita/per-capita.component';
+import { OtherComponent } from './other/other.component';
 
 const APP_ROUTES: Routes = [
   {
@@ -38,6 +39,10 @@ const APP_ROUTES: Routes = [
   {
     path: ROUTER_UTILS.config.navigation.govtSpending,
     component: ShareOfGovtSpendingComponent
+  },
+  {
+    path: ROUTER_UTILS.config.navigation.other,
+    component: OtherComponent
   },
   {
     path: ROUTER_UTILS.config.navigation.readme,

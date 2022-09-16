@@ -1,1 +1,8 @@
-<p>readme works!</p>
+<div class="card m-5">
+  <div class="card-body">
+    <p>
+      {{ text }}
+    </p>
+    <app-text-reader [enableAutoplay]="false" [text]="text"></app-text-reader>
+  </div>
+</div>
