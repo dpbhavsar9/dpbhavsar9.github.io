@@ -1,7 +1,7 @@
 <button
   class="btn btn-outline mr-1"
   (click)="read()"
-  *ngIf="playState === PLAY_STATES.STOPPED"
+  *ngIf="playState === PLAY_STATES.STOPPED || playState === PLAY_STATES.FINISHED"
 >
   <em class="pi pi-play"></em>
 </button>

@@ -65,6 +65,18 @@ export class TextReaderComponent implements OnInit {
     this.speech
       .speak({
         text: this.text,
+        queue: false,
+        listeners: {
+          onstart: () => {
+            this.playState = PLAY_STATES.PLAYING;
+          },
+          onend: () => {
+            this.playState = PLAY_STATES.FINISHED;
+          },
+          onresume: () => {
+            this.playState = PLAY_STATES.PLAYING;
+          },
+        }
       })
       .then(() => {
         this.playState = PLAY_STATES.FINISHED;
@@ -82,7 +94,6 @@ export class TextReaderComponent implements OnInit {
 
   resume() {
     this.speech.resume();
-    this.playState = PLAY_STATES.PLAYING;
   }
 
   stop() {
