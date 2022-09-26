@@ -938,6 +938,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
+speak-tts
+MIT
+
 tslib
 0BSD
 Copyright (c) Microsoft Corporation.
